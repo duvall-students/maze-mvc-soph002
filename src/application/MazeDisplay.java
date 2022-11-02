@@ -64,9 +64,8 @@ public class MazeDisplay extends Application {
 	// Start of JavaFX Application
 	public void start(Stage stage) {
 		// Initializing logic state
-		control=new MazeController(NUM_ROWS,NUM_COLUMNS);
+		control=new MazeController(NUM_ROWS,NUM_COLUMNS,this);
 
-		
 		// Initializing the gui
 		myScene = setupScene();
 		stage.setScene(myScene);

@@ -8,6 +8,7 @@ import java.util.List;
 
 public abstract class SearchAlgorithm {
 
+    public String search;
     Maze maze;					// The maze being solved
     Point goal;					// The goal Point - will let us know when search is successful
     Collection<Point> data;		// Data structure used to keep "fringe" points

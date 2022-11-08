@@ -15,6 +15,7 @@ public class RandomWalk extends SearchAlgorithm{
 
 	public RandomWalk(Maze mazeBlocks, Point startPoint, Point goalPoint){
 		super(mazeBlocks,startPoint,goalPoint);
+		search="RandomWalk";
 		next = startPoint;
 		rand = new Random();
 	}

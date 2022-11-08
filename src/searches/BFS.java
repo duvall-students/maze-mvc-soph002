@@ -17,6 +17,7 @@ public class BFS extends SearchAlgorithm{
 
 	public BFS(Maze mazeBlocks, Point startPoint, Point goalPoint){
 		super(mazeBlocks, startPoint, goalPoint);
+		search="BFS";
 		data = new LinkedList<>();
 		data.add(startPoint);
 		childParent = new HashMap<>();
@@ -28,7 +29,7 @@ public class BFS extends SearchAlgorithm{
 	 * 
 	 * It chooses the first point it finds that is empty.
 	 */
-	protected Point chooseNeighbor(Collection<Point> neighbors){
+	Point chooseNeighbor(Collection<Point> neighbors){
 		for(Point p: neighbors){
 			if(maze.get(p)==Maze.EMPTY){
 				return p;

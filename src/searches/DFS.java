@@ -12,6 +12,7 @@ public class DFS extends SearchAlgorithm{
 
 	public DFS(Maze mazeBlocks, Point startPoint, Point goalPoint){
 		super(mazeBlocks, startPoint, goalPoint);
+		search="DFS";
 		// The data structure for DFS is a stack.
 		Stack<Point> stack =new Stack<>();
 		stack.push(startPoint);

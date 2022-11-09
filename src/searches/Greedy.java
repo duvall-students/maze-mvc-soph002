@@ -15,7 +15,7 @@ public class Greedy extends BFS{
 
 	public Greedy(Maze mazeBlocks, Point startPoint, Point goalPoint) {
 		super(mazeBlocks, startPoint, goalPoint);
-		search="Greedy";
+		searchType="Greedy";
 		// For a greedy searcher, we will use a priority queue
 		// based on the number of steps away from the goal.		
 		data = new PriorityQueue<Point>(15, (p1, p2) -> distanceToGoal(p1) - distanceToGoal(p2));

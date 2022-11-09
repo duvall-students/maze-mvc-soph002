@@ -17,7 +17,7 @@ public class BFS extends SearchAlgorithm{
 
 	public BFS(Maze mazeBlocks, Point startPoint, Point goalPoint){
 		super(mazeBlocks, startPoint, goalPoint);
-		search="BFS";
+		searchType="BFS";
 		data = new LinkedList<>();
 		data.add(startPoint);
 		childParent = new HashMap<>();

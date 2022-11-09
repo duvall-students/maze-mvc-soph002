@@ -12,7 +12,7 @@ import application.Maze;
 public class Magic extends Greedy{
 		public Magic(Maze mazeBlocks, Point startPoint, Point goalPoint){
 			super(mazeBlocks, startPoint, goalPoint);
-			search="Magic";
+			searchType="Magic";
 		}
 
 		/*

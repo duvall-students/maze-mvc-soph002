@@ -9,13 +9,14 @@ import java.util.Random;
 import application.Maze;
 
 public class RandomWalk extends SearchAlgorithm{
+	public static final String RANDOM_WALK = "RandomWalk";
 	public final double EXPLORE_BIAS = .999;
 	private Point next;
 	private Random rand;
 
 	public RandomWalk(Maze mazeBlocks, Point startPoint, Point goalPoint){
 		super(mazeBlocks,startPoint,goalPoint);
-		searchType="RandomWalk";
+		searchType= RANDOM_WALK;
 		next = startPoint;
 		rand = new Random();
 	}

@@ -3,16 +3,17 @@ package searches;
 import java.awt.Point;
 import java.util.ArrayList;
 import java.util.Collection;
-import java.util.HashMap;
 import java.util.List;
-import java.util.PriorityQueue;
 
 import application.Maze;
 
 public class Magic extends Greedy{
-		public Magic(Maze mazeBlocks, Point startPoint, Point goalPoint){
+
+	public static final String MAGIC = "Magic";
+
+	public Magic(Maze mazeBlocks, Point startPoint, Point goalPoint){
 			super(mazeBlocks, startPoint, goalPoint);
-			searchType="Magic";
+			searchType= MAGIC;
 		}
 
 		/*

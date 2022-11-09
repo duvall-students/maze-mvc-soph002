@@ -1,23 +1,22 @@
 package searches;
 
 import java.awt.Point;
-import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.LinkedList;
-import java.util.List;
 import java.util.Queue;
 
 import application.Maze;
 
 public class BFS extends SearchAlgorithm{
 
+	public static final String BFS = "BFS";
 	// Keeps up with the child-parent trail so we can recreate the chosen path
 	HashMap<Point,Point> childParent;
 
 	public BFS(Maze mazeBlocks, Point startPoint, Point goalPoint){
 		super(mazeBlocks, startPoint, goalPoint);
-		searchType="BFS";
+		searchType= BFS;
 		data = new LinkedList<>();
 		data.add(startPoint);
 		childParent = new HashMap<>();
